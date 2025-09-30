@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Banner Hover Demo</title>
+  <style>
+    .myrobot-banner {
+	position: relative;
+	width: 400px;
+	height: 180px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+}
+.myrobot-banner img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+	display: block;
+    -webkit-transition: .1s ease-in-out;
+	transition: .1s ease-in-out;
+}
+.myrobot-banner:hover img:nth-of-type(2) {
+	opacity: 0;
+}
+   </style> 
+   </head>
+<body>
+
+
+  <div class="myrobot-banner">
+  <a href="https://google.com">
+     <img src="bannerGIF/bnr-myrobot_00001.png" alt="ボタン画像２" />
+    <img src="bannerGIF/bnr-myrobot.gif" alt="ボタン画像１" />
+  </a>
+</div>
+</body>
+</html>
